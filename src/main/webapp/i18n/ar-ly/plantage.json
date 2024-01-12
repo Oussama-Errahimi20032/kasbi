@@ -1,0 +1,27 @@
+{
+  "pharmaGesApp": {
+    "plantage": {
+      "home": {
+        "title": "Plantages",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Plantage",
+        "createOrEditLabel": "Create or edit a Plantage",
+        "notFound": "No Plantages found"
+      },
+      "created": "A new Plantage is created with identifier {{ param }}",
+      "updated": "A Plantage is updated with identifier {{ param }}",
+      "deleted": "A Plantage is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Plantage {{ id }}?"
+      },
+      "detail": {
+        "title": "Plantage"
+      },
+      "id": "ID",
+      "date": "Date",
+      "nombre": "Nombre",
+      "planteLibelle": "Plante Libelle",
+      "parcelleLibelle": "Parcelle Libelle"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "annotations": {
+    "changelogDate": "20240112160602"
+  },
+  "applications": "*",
+  "entityTableName": "plante",
+  "fields": [
+    {
+      "fieldName": "libelle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "racine",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "image",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Plante",
+  "relationships": [
+    {
+      "otherEntityName": "plantage",
+      "otherEntityRelationshipName": "planteLibelle",
+      "relationshipName": "plantage",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "typePlante",
+      "relationshipName": "typePlante",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "typePlante",
+      "relationshipName": "nom",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "parcelle",
+      "otherEntityRelationshipName": "plantes",
+      "relationshipName": "parcelles",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

@@ -1,0 +1,29 @@
+{
+  "pharmaGesApp": {
+    "parcelle": {
+      "home": {
+        "title": "Parcelles",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Parcelle",
+        "createOrEditLabel": "Create or edit a Parcelle",
+        "notFound": "No Parcelles found"
+      },
+      "created": "A new Parcelle is created with identifier {{ param }}",
+      "updated": "A Parcelle is updated with identifier {{ param }}",
+      "deleted": "A Parcelle is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Parcelle {{ id }}?"
+      },
+      "detail": {
+        "title": "Parcelle"
+      },
+      "id": "ID",
+      "libelle": "Libelle",
+      "photo": "Photo",
+      "plantage": "Plantage",
+      "ferme": "Ferme",
+      "plantes": "Plantes",
+      "fermeLibelle": "Ferme Libelle"
+    }
+  }
+}

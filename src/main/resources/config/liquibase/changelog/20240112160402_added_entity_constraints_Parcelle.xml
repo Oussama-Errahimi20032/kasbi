@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Parcelle.
+    -->
+    <changeSet id="20240112160402-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="ferme_id"
+                                 baseTableName="parcelle"
+                                 constraintName="fk_parcelle__ferme_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ferme"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="parcelle_id"
+                                 baseTableName="rel_parcelle__plantes"
+                                 constraintName="fk_rel_parcelle__plantes__parcelle_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="parcelle"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="plantes_id"
+                                 baseTableName="rel_parcelle__plantes"
+                                 constraintName="fk_rel_parcelle__plantes__plantes_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="plante"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="ferme_libelle_id"
+                                 baseTableName="parcelle"
+                                 constraintName="fk_parcelle__ferme_libelle_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ferme"
+                                 />
+    </changeSet>
+</databaseChangeLog>

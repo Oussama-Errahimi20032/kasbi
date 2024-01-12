@@ -1,0 +1,28 @@
+{
+  "pharmaGesApp": {
+    "typePlante": {
+      "home": {
+        "title": "Type Plantes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Type Plante",
+        "createOrEditLabel": "Create or edit a Type Plante",
+        "notFound": "No Type Plantes found"
+      },
+      "created": "A new Type Plante is created with identifier {{ param }}",
+      "updated": "A Type Plante is updated with identifier {{ param }}",
+      "deleted": "A Type Plante is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Type Plante {{ id }}?"
+      },
+      "detail": {
+        "title": "Type Plante"
+      },
+      "id": "ID",
+      "name": "Name",
+      "humiditeMax": "Humidite Max",
+      "humiditeMin": "Humidite Min",
+      "temperature": "Temperature",
+      "plante": "Plante"
+    }
+  }
+}

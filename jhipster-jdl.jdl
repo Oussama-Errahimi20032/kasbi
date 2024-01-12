@@ -1,0 +1,77 @@
+entity AppUser {
+    username String
+    email String
+    password String
+    address String
+    phone String
+    role String
+    image String
+}
+
+entity Parcelle {
+    libelle String
+    photo String
+}
+
+entity Plantage {
+    date LocalDate
+    nombre Integer
+}
+
+entity Plante {
+    libelle String
+    racine String
+    image String
+}
+
+entity Ferme {
+    libelle String
+    photo String
+}
+
+entity TypePlante {
+    name String
+    humiditeMax Integer
+    humiditeMin Integer
+    temperature Integer
+}
+
+entity Admin {
+    // Add relevant fields for administrators
+}
+
+relationship OneToMany {
+    AppUser { ferme } to Ferme
+}
+
+relationship ManyToOne {
+    Ferme { users } to AppUser
+}
+
+relationship ManyToOne {
+    Parcelle { ferme } to Ferme
+}
+
+relationship ManyToMany {
+    Parcelle { plantes } to Plante { parcelles }
+}
+
+relationship ManyToOne {
+    Plante { typePlante } to TypePlante
+}
+
+relationship OneToMany {
+    Ferme to Parcelle { fermeLibelle }
+}
+
+relationship OneToMany {
+    TypePlante to Plante { nom }
+}
+
+relationship OneToMany {
+    Plante to Plantage { planteLibelle }
+}
+
+relationship OneToMany {
+    Parcelle to Plantage { parcelleLibelle }
+}

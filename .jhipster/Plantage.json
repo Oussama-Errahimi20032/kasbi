@@ -1,0 +1,33 @@
+{
+  "annotations": {
+    "changelogDate": "20240112160502"
+  },
+  "applications": "*",
+  "entityTableName": "plantage",
+  "fields": [
+    {
+      "fieldName": "date",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "nombre",
+      "fieldType": "Integer"
+    }
+  ],
+  "name": "Plantage",
+  "relationships": [
+    {
+      "otherEntityName": "plante",
+      "relationshipName": "planteLibelle",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "parcelle",
+      "relationshipName": "parcelleLibelle",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

@@ -1,0 +1,11 @@
+{
+  "annotations": {
+    "changelogDate": "20240112160902"
+  },
+  "applications": "*",
+  "entityTableName": "admin",
+  "fields": [],
+  "name": "Admin",
+  "relationships": [],
+  "searchEngine": "no"
+}

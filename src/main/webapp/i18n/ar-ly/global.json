@@ -7,7 +7,14 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "الكيانات",
-        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
+        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)",
+        "appUser": "App User",
+        "parcelle": "Parcelle",
+        "plantage": "Plantage",
+        "plante": "Plante",
+        "ferme": "Ferme",
+        "typePlante": "Type Plante",
+        "admin": "Admin"
       },
       "account": {
         "main": "الحساب",
